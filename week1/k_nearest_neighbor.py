@@ -155,7 +155,7 @@ class KNearestNeighbor:
             # Hint: Look up the function numpy.argsort.                             #
             #########################################################################
             # *****START OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
-            vec_nums = np.argsort(dists[i])[:k:-1]
+            vec_nums = np.argsort(dists[i])[:k]
             closest_y = [self.y_train[vec_num] for vec_num in vec_nums]
             # *****END OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
             #########################################################################
